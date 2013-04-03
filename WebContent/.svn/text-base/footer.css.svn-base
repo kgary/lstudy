@@ -1,0 +1,57 @@
+#asu_footer  {
+display: block;
+height: 1.33em;
+margin: 0px;
+padding: 0px 25px 0px 0px;
+text-align: right;
+background-origin: initial;
+background-attachment: initial;
+}
+.asu_black_footer
+{
+background-color:black;
+background-repeat:repeat-x;
+
+}
+#asu_footer li{
+color: white;
+border-right: 1px solid white;
+display: inline;
+font: normal normal normal 0.95em/2em Tahoma, Arial, sans-serif;
+list-style-type: none;
+margin: 0px;
+padding: 0px;
+font-size: 11px;
+}
+#asu_footer li a {
+color:#FFFFFF;
+padding:0 0.66em;
+text-decoration:none;
+}
+#asu_footer li.no-border
+{
+border-right:medium none;
+}
+#asu_footer_contact_info  {
+color:#666666;
+font:0.95em/1.2em Tahoma,Arial,sans-serif;
+text-align:right;
+font-size: 11px;
+}
+div #footer-inner.region region-footer{
+display: block;
+margin: 0px 0.25em;
+padding: 0px;
+height: 81px;
+width:100%
+}
+span.Apple-style-span
+{
+display: inline;
+height: 0px;
+width: 0px;
+}
+span a{
+color: #903;
+text-decoration: underline;
+}

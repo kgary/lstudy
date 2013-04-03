@@ -1,0 +1,41 @@
+#asu_gold_hdr{
+background: #860025 repeat-x 0% 0%;
+background-attachment: initial;
+background-origin: initial;
+background-clip: initial;
+border-bottom: 3px solid #FDB928;
+min-height: 97px;
+padding: 0px 0px 0px 0px;
+}
+   
+#asu_universal_nav{
+float: right;
+max-width: 593px;
+padding-left: 6px;
+padding-right: 6px;
+}
+
+#asu_universal_nav li {
+
+border-right:2px solid #A3A8AB;
+color:#CCCCCC;
+display:inline;
+float:left;
+font:bold 1em/1em Tahoma,Arial,sans-serif;
+list-style-type:none;
+text-align:right;
+font-size:0.75em;
+list-style:none outside none;
+}
+
+#asu_universal_nav li a {
+color:#CCCCCC;
+padding:0 0.55em;
+}
+
+#asu_logo{
+display: block;
+float: left;
+padding: 1.47em 0px 0px 28px;
+border:none;
+}   

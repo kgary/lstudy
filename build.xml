@@ -1,0 +1,75 @@
+<?xml version="1.0" ?>
+<project name="CCLI Longitudinal Study" default="build" basedir=".">
+  <description>
+  </description>
+  <!-- set global properties for this build -->
+  <property name="tomcat.home" value="/opt/apache-tomcat-6.0.14"/>
+  <property name="servlet.jar"	  value="${tomcat.home}/lib/servlet-api.jar" />
+  <property name="src.dir" value="src" />
+  <property name="lib.dir" location="jars" />
+  <property name="res.dir" value="WebContent" />
+  <property name="build.dir" value="build" />
+  <property name="classes.dir" value="classes" />
+  <property name="appname" value="ROOT" />
+  <property name="war" value="${appname}.war" />
+  <property name="web.xml" value="${res.dir}/WEB-INF/web.xml" />
+  
+   <target name="targets">
+      <echo message="targets are clean, prepare, compile, war, and deploy"/>
+   </target>
+
+   <target name="prepare">
+      <!-- Create the time stamp -->
+      <tstamp/>
+      <mkdir dir="${build.dir}"/>
+     <mkdir dir="${build.dir}/static"/>
+     <mkdir dir="${classes.dir}"/>
+   </target>
+      
+  <target name="compile" depends="prepare">
+    <javac debug="true" includeAntRuntime="no" srcdir="${src.dir}" destdir="${classes.dir}" >
+      <classpath>
+        <pathelement path="${servlet.jar}" />
+        <fileset dir="${lib.dir}" includes="**/*.jar"/>
+      </classpath>
+    </javac>
+  </target>
+
+  <target name="build" depends="compile">
+      <copy todir="${build.dir}/WEB-INF/classes" overwrite="yes">
+    	<fileset dir="${classes.dir}"/>
+      </copy>
+      <copy todir="${build.dir}/WEB-INF" file="${web.xml}" overwrite="yes"/>
+      <copy todir="${build.dir}">
+      	<fileset dir="${res.dir}" excludes="**/error/*" includes="**/*.jsp,**/*.html,**/*.css,**/*.js,**/*.properties,**/*.png"/>
+      </copy>
+  	  <copy todir="${build.dir}/static">
+  	      	<fileset dir="${res.dir}/static" includes="**/*.html"/>
+  	  </copy>
+      <copy todir="${build.dir}/WEB-INF/lib">
+      	<fileset dir="${lib.dir}" excludes="servlet-api.jar" includes="*.jar"/>
+      </copy>
+      <copy todir="${build.dir}/WEB-INF/classes" file="${src.dir}/log4j.properties"/>
+  </target>
+   
+  <target name="war" depends="build">
+      <jar destfile="${war}" basedir="${build.dir}" />
+  </target>
+    
+  <target name="deploy" depends="war">
+      <copy todir="${tomcat.home}/ROOT">
+	<fileset dir="${res.dir}/error"/>
+      </copy>
+     <echo message="TOMCAT_HOME is set to ${tomcat.home}" />
+      <copy file="${war}" todir="${tomcat.home}/webapps" overwrite="yes" />
+      <echo message="" />
+      <echo message="Deployment complete"/>
+  </target>
+    
+  <target name="clean">
+    <delete file="${war}"/>
+    <delete dir="${build.dir}"/>
+    <delete dir="${classes.dir}"/>
+  </target>
+  
+</project>

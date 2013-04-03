@@ -1,0 +1,83 @@
+10
+
+dir
+32
+svn://lead2.poly.asu.edu/nsfccli/LongitudinalStudy/src
+svn://lead2.poly.asu.edu/nsfccli
+
+
+
+2011-05-13T22:54:59.359472Z
+27
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+9fca3d67-39b0-479b-8814-1bd1409bf193
+
+dao
+dir
+
+controllers
+dir
+
+logging
+dir
+
+servlets
+dir
+
+beans
+dir
+
+log4j.properties
+file
+
+
+
+
+2011-06-03T00:02:33.000000Z
+a5e624bde0323ab8297509092b918292
+2011-04-26T18:26:28.382584Z
+4
+smandal
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+990
+
+properties
+dir
+
+util
+dir
+

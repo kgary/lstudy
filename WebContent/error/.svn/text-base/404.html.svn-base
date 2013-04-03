@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html> 
+<head>
+<link rel="stylesheet" type="text/css" href="header.css"/>
+<link rel="stylesheet" type="text/css" href="Longi.css"/>
+<link rel="stylesheet" type="text/css" href="footer.css"/>
+<script type="text/javascript" src="Validation.js"></script>
+</head>
+<body>
+<div id="asu_container">    
+<div id="asu_gold_hdr"> 
+<div id="asu_logo"> 
+<a href="http://www.asu.edu/"><img src="CTI_logo_white_maroonbg.png" alt="Arizona State University" height="62" width="320" title="Arizona State University" /></a> 
+</div> 
+  <!-- START UNIVERSAL NAV /asuthemes/2.0/includes/html/asu_universal_nav.shtml --> 
+      <ul id="asu_universal_nav"> 
+        <li><a href="http://www.asu.edu/">ASU Home </a></li> 
+        <li><a href="http://www.asu.edu/index/">ASU A-Z Index </a></li> 
+        <li><a href="https://my.asu.edu/">My ASU </a></li> 
+        <li><a href="http://www.asu.edu/colleges/">Colleges &amp; Schools </a></li> 
+        <li><a href="http://www.asu.edu/directory/">Directory </a></li> 
+        <li class="no-border"><a href="http://www.asu.edu/map/">Map </a></li> 
+      </ul> 
+      <!-- END UNIVERSAL NAV --> 
+  </div><!-- end gold header-->  
+   </div>
+<p>
+ The URL you are trying to load was not found on this server. If you feel this is in error, please contact the system administrator at softwareenterprise@asu.edu with the Subject Line PAGE NOT FOUND ERROR
+</p>
+   <ul id="asu_footer" class="asu_black_footer">
+     <li><a href="http://www.asu.edu/copyright/">Copyright &amp; Trademark</a></li>
+     <li><a href="http://www.asu.edu/accessibility/">Accessibility</a></li>
+     <li><a href="http://www.asu.edu/privacy/">Privacy</a></li>
+
+     <li><a href="http://www.asu.edu/emergency/">Emergency</a></li>
+     <li class="no-border"><a href="http://www.asu.edu/contactasu/">Contact ASU</a></li>
+   </ul>
+   <!-- END FOOTER -->
+   <P/>
+   <p/>
+   <p/>   	
+ <div id="asu_footer_contact_info"><div id="footer-inner" class="region region-footer">
+ <p><p><span class="Apple-style-span"><a href="http://softwareenterprise.asu.edu/lead/">LEAD</a>&nbsp;|&nbsp;<a href="mailto:kgary@asu.edu">Contact Site Admin</a></span></p>
+ 	<p><p><span class="Apple-style-span"><a href="http://technology.asu.edu/">College of Technology and Innovation</a>&nbsp;|&nbsp;<a href="http://campus.asu.edu/polytechnic" title="Polytechnic campus">Polytechnic campus</a></span></p>
+
+<p><span class="Apple-style-span">7231 E Sonoran Arroyo Mall,&nbsp;<a href="http://www.asu.edu/map/interactive/?campus=polytechnic&amp;building=SANTN">330 Santan Hall</a>, Mesa, AZ 85212<br />
+<a href="http://technology.asu.edu/feedback">Web Site Feedback</a><br />
+<a href="https://secure.asufoundation.org/giving/online-gift.asp?fid=7">Invest in the College</a><br />
+</span></p>
+<p>&nbsp;</p></p>
+	  </div><!-- end footer contact info -->
+	  </div>
+ </body>
+ </html>    
+	

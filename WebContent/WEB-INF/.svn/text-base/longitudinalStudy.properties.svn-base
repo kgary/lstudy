@@ -1,0 +1,12 @@
+title=Longitudinal Study - Assessment System
+dBUserName=lsdb
+dBPassword=asupoly
+dBUrl=jdbc:mysql://localhost:3306/assessment_master_db
+logoutMessage=Thank you for completing the survey!<br><br>If you have any questions regarding this study, please contact Dr. Kevin Gary at kgary@asu.edu.<br>If you would like further information on the Software Enterprise please visit http://softwareenterprise.asu.edu
+adminLogoutMessage=You have been logged out
+hostUrl=http://lead1.poly.asu.edu?token=<emailid>
+host=http://lead1.poly.asu.edu
+fromEmailAddress=kgary@asu.edu
+sqlQueryForSendingEmails=SELECT emailid FROM emaillist_tracked where accessed=0
+nsfccliAppAbsoluteURL=http://lead2.poly.asu.edu:8090/nsfccliapp/GroupManager?token=LongitudinalStudy&user=kgary@asu.edu
+
